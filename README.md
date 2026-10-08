@@ -14,6 +14,10 @@ bench.sh compare orders-api before after # 중앙값 변화, 환경이 다르면
 이력서·회고의 성능 수치는 "어디서, 몇 번, 어떻게 쟀는지"가 없으면 근거가 되지 않습니다.
 측정 명령·환경·횟수를 설정에 고정하고, 결과를 코드와 같은 PR에 커밋해 수치마다 근거 파일이 남게 합니다.
 
+## 리포트
+작업이 끝나면 HTML 리포트를 남깁니다: `~/.config/flow-reports/<플러그인>/<시각>-<종류>.html`.
+다섯 flow 플러그인(startflow·devflow·qaflow·uiflow·benchflow)의 리포트가 한 목록 `~/.config/flow-reports/index.html`에 모입니다(최신이 위, 정상/확인 필요/실패 표시).
+
 ## 설치
 ```
 /plugin marketplace add taehyeooo/benchflow
